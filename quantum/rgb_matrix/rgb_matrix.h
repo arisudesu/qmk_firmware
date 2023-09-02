@@ -24,6 +24,10 @@
 #include "color.h"
 #include "keyboard.h"
 
+#if defined(OPENRGB_ENABLE)
+#    include "openrgb.h"
+#endif
+
 #ifdef IS31FL3731
 #    include "is31fl3731.h"
 #elif defined(IS31FL3733)
